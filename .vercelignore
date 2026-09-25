@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.git/
+.env
+.env.*
+SHOWCASE.md
+docs/
+artifacts/
+qa/
+playwright-report/
+test-results/
+*.log
+QA.md
+FRONTEND-COVERAGE.md
+FEATURES.md
+INTEGRATIONS.md
+qa-results.json

@@ -1,0 +1,36 @@
+
+# Local dependencies, build output and secrets
+node_modules/
+dist/
+dist-ssr/
+.next/
+out/
+.npm-cache/
+.cache/
+.env
+.env.*
+!.env.example
+!.env.sample
+*.log
+*.tsbuildinfo
+coverage/
+test-results/
+playwright-report/
+.DS_Store
+Thumbs.db
+
+qa/
+
+# Local presentation material and generated review artifacts
+SHOWCASE.md
+SHOWCASE-GUIDE.md
+docs/
+artifacts/
+qa/
+screenshots/
+QA.md
+FRONTEND-COVERAGE.md
+FEATURES.md
+INTEGRATIONS.md
+qa-results.json
+.vercel/

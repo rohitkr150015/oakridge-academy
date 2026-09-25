@@ -1,0 +1,20 @@
+{
+  "name": "oakridge-academy",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node scripts/serve.cjs",
+    "dev": "node scripts/serve.cjs",
+    "test": "node scripts/check.cjs",
+    "test:assistant": "node scripts/check-assistant.cjs",
+    "test:accessibility": "node scripts/accessibility.cjs",
+    "build": "node scripts/build.cjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "axe-core": "^4.11.0"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}
