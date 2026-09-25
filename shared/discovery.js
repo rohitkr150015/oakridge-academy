@@ -28,11 +28,11 @@
         *{box-sizing:border-box}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit;cursor:pointer}a{color:inherit}button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:5px}button:disabled{cursor:default}h2,h3,p{margin:0}.studio{position:relative;isolation:isolate;background:var(--bg);border-radius:24px;overflow:hidden;border:1px solid #ffffff1c;box-shadow:0 24px 70px #102b3314}.studio::before{content:'';position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 80% 5%,#ffffff0e,transparent 55%)}
         .top{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:26px 36px;border-bottom:1px solid #ffffff18}.eyebrow{font-size:10px;letter-spacing:2.2px;font-weight:700;color:var(--accent);line-height:1.6}.live{display:inline-flex;gap:9px;align-items:center;white-space:nowrap;font-size:11px;color:var(--muted)}.live i{width:6px;height:6px;background:var(--accent);border-radius:50%;box-shadow:0 0 15px var(--accent)}
         .layout{display:grid;grid-template-columns:1fr 1.05fr}.copy{padding:44px 0 32px 36px;position:relative;z-index:2}h2{font:400 clamp(32px,3.6vw,48px)/1.1 Georgia,serif;letter-spacing:-1.2px;color:var(--text)}h2 em{color:var(--accent);font-weight:400}.intro{max-width:405px;font-size:14px;line-height:1.85;color:var(--muted);margin:22px 0 24px}.prompt{font-size:11px;letter-spacing:.7px;margin-bottom:12px;color:var(--text)}.choices{display:flex;flex-wrap:wrap;gap:8px}.choice{display:flex;gap:8px;align-items:center;border:1px solid #ffffff35;background:#ffffff06;color:var(--text);padding:10px 13px;border-radius:24px;font-size:12px;min-height:42px;transition:background .2s,transform .2s}.choice:hover{background:#ffffff15;transform:translateY(-2px)}.choice[aria-pressed=true]{color:var(--deep);background:var(--accent);border-color:var(--accent)}.choice span{font-size:18px;line-height:1}.actions{display:flex;align-items:center;gap:20px;margin-top:22px;flex-wrap:wrap}.surprise{padding:10px 0;border:0;background:none;color:var(--accent);font-size:12px;text-decoration:underline;text-underline-offset:5px}.campus{font-size:12px;text-decoration:none;color:var(--muted)}.campus:hover{color:white}.disclaimer{font-size:10px;color:var(--muted);line-height:1.6;margin-top:22px}
-        .visual{position:relative;min-height:405px;display:grid;place-items:center;perspective:900px;overflow:hidden;touch-action:pan-y;background:radial-gradient(ellipse at center,color-mix(in srgb,var(--spark) 11%,transparent),transparent 62%)}.grid{position:absolute;width:500px;height:500px;background-image:linear-gradient(#ffffff0a 1px,transparent 1px),linear-gradient(90deg,#ffffff0a 1px,transparent 1px);background-size:38px 38px;transform:rotateX(65deg) rotateZ(-30deg);mask-image:radial-gradient(ellipse,black,transparent 68%);bottom:-185px}.universe{width:330px;height:330px;position:relative;transform-style:preserve-3d;transform:rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .35s ease-out}.halo{position:absolute;inset:30px;border:1px solid #ffffff26;border-radius:50%;transform:rotateX(64deg) rotateZ(-24deg);box-shadow:0 0 35px #ffffff04,inset 0 0 20px #ffffff03}.halo.two{inset:4px;transform:rotateX(35deg) rotateY(58deg)}.halo.three{inset:61px;transform:rotateY(65deg) rotateZ(20deg);border-style:dashed;border-color:#ffffff35}.orbit{position:absolute;inset:20px;animation:orbit 28s linear infinite;transform-style:preserve-3d}.star{position:absolute;width:8px;height:8px;top:35px;left:55px;border-radius:50%;background:var(--spark);box-shadow:0 0 22px var(--spark)}.star.second{top:auto;left:auto;right:45px;bottom:32px;width:5px;height:5px;background:var(--accent)}
+        .visual{position:relative;min-height:405px;display:grid;place-items:center;perspective:900px;overflow:hidden;touch-action:pan-y;background:radial-gradient(ellipse at center,color-mix(in srgb,var(--spark) 11%,transparent),transparent 62%)}.grid{position:absolute;width:500px;height:500px;background-image:linear-gradient(#ffffff0a 1px,transparent 1px),linear-gradient(90deg,#ffffff0a 1px,transparent 1px);background-size:38px 38px;transform:rotateX(65deg) rotateZ(-30deg);mask-image:radial-gradient(ellipse,black,transparent 68%);bottom:-185px}.universe{width:330px;height:330px;position:relative;transform-style:preserve-3d;transform:rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .35s ease-out}.halo{position:absolute;inset:30px;border:1px solid #ffffff26;border-radius:50%;transform:rotateX(64deg) rotateZ(-24deg);box-shadow:0 0 35px #ffffff04,inset 0 0 20px #ffffff03}.halo.two{inset:4px;transform:rotateX(35deg) rotateY(58deg)}.halo.three{inset:61px;transform:rotateY(65deg) rotateZ(20deg);border-style:dashed;border-color:#ffffff35}.orbit{position:absolute;inset:0;transform-style:preserve-3d;pointer-events:none}.star{position:absolute;width:8px;height:8px;top:50%;left:50%;margin:-4px;border-radius:50%;background:var(--spark);box-shadow:0 0 16px var(--spark);will-change:transform}.star.second{width:6px;height:6px;margin:-3px;background:var(--accent);box-shadow:0 0 14px var(--accent)}
         .object{position:absolute;inset:85px;transform-style:preserve-3d;animation:float 7s ease-in-out infinite}.core{position:absolute;inset:21px;display:grid;place-items:center;border-radius:50%;border:1px solid #ffffff65;background:radial-gradient(circle at 30% 20%,#ffffff70,transparent 38%),radial-gradient(circle at 60% 70%,var(--spark),var(--bg) 85%);box-shadow:inset -12px -14px 26px #0005,inset 5px 8px 18px #fff3,0 0 65px color-mix(in srgb,var(--spark) 22%,transparent);color:var(--text);font:44px Georgia,serif;z-index:3;transform:translateZ(40px)}.core::after{content:'';position:absolute;inset:-11px;border:1px solid var(--accent);border-radius:50%;opacity:.6;transform:rotateY(45deg)}.petal{position:absolute;inset:20px;border:1px solid #ffffff65;border-radius:12px;transform:rotateY(45deg) rotateX(55deg) rotateZ(calc(var(--i)*60deg));background:linear-gradient(135deg,#ffffff12,#ffffff03);box-shadow:inset 0 0 18px #ffffff10}.flower .petal{border-radius:65% 65% 40% 40%;background:linear-gradient(135deg,#f5dc9299,#b4d49b30);width:64px;height:110px;left:48px;top:-12px;transform-origin:50% 86%;transform:rotateZ(calc(var(--i)*60deg)) rotateX(25deg)}.flower .core{inset:48px;background:radial-gradient(circle at 35% 25%,#fff2ab,#b17a2c);font-size:25px}.flower .core::after{display:none}.prism .core{border-radius:18px;transform:rotate(-30deg) rotateY(25deg) rotateX(20deg);background:linear-gradient(140deg,#e2ffffcc,#64c2d470 45%,#7387cb88);font-size:48px}.prism .core::after{border-radius:12px;transform:translate(18px,15px);inset:-5px}.prism .petal{border-radius:8px;inset:0;transform:rotateY(45deg) rotateX(55deg) rotateZ(calc(var(--i)*30deg));border-color:#a6f6ff45}.book .core{border-radius:4px 12px 12px 4px;inset:15px 12px 15px 76px;background:linear-gradient(100deg,#c5b381,#fff4d5);transform:rotateY(-30deg) rotateZ(-8deg);color:#6b5633;box-shadow:4px 4px 0 #b9a477,8px 8px 0 #d9c59a}.book .core::after{inset:0;transform:translateX(-100%) rotateY(30deg);border:0;border-radius:12px 4px 4px 12px;background:repeating-linear-gradient(0deg,transparent 0 17px,#a28d5833 18px 19px),linear-gradient(90deg,#fff4d5,#dbc697);opacity:1}.book .petal{display:none}.book .object{transform:rotateX(12deg)}
         .float-label{position:absolute;z-index:4;display:flex;align-items:center;gap:9px;border:1px solid #ffffff30;background:var(--deep);box-shadow:0 8px 30px #0002;border-radius:10px;padding:12px 14px;font-size:11px;animation:float 8s ease-in-out infinite;white-space:nowrap}.label-one{top:42px;right:8px;transform:rotate(7deg)}.label-two{bottom:35px;left:0;animation-delay:-3s}.float-label b{font-weight:400;color:var(--accent);font-size:18px}.caption{position:absolute;bottom:19px;left:20px;right:20px;display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:10px;letter-spacing:.4px;color:var(--muted)}.pause{border:1px solid #ffffff40;background:transparent;color:var(--text);border-radius:20px;padding:8px 12px;font-size:10px;min-height:34px}.pause:disabled{opacity:.65}
         .result{margin:0 22px 22px;padding:23px 25px;border-radius:14px;background:var(--deep);border:1px solid #ffffff16;display:grid;grid-template-columns:1fr 1.2fr;gap:28px}.result .tag{font-size:9px;letter-spacing:1.8px;color:var(--accent);display:block;margin-bottom:12px}.result h3{font:400 24px/1.25 Georgia,serif;color:var(--text);margin-bottom:10px}.result p{font-size:11px;line-height:1.6;color:var(--muted)}ol{list-style:none;padding:0;margin:0;display:grid;gap:9px;counter-reset:steps}li{counter-increment:steps;display:flex;gap:12px;color:var(--muted);font-size:12px;line-height:1.65}li::before{content:'0' counter(steps);color:var(--accent);font-size:10px;padding-top:2px}.result.changed{animation:arrive .35s ease-out}
-        @keyframes orbit{to{transform:rotateZ(360deg)}}@keyframes float{0%,100%{translate:0 0}50%{translate:0 -12px}}@keyframes arrive{from{opacity:.5;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+        @keyframes float{0%,100%{translate:0 0}50%{translate:0 -12px}}@keyframes arrive{from{opacity:.5;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
         :host([still]) *, :host([offscreen]) *{animation-play-state:paused!important}:host([still]) .universe{transform:none!important;transition:none}:host([still]) .choice{transition:none}:host([still]) .result{animation:none!important}
         @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.universe{transform:none!important}}
         @container(max-width:760px){.layout{grid-template-columns:1fr}.copy{padding:30px 26px 0}.intro{max-width:100%}.visual{min-height:350px}.top{padding:22px 26px}.result{grid-template-columns:1fr;gap:18px}.disclaimer{margin-top:14px}h2{font-size:38px}.live{display:none}}
@@ -57,6 +57,9 @@
         this.root.querySelector('.universe').style.cssText = `--rx:${-(e.clientY-rect.top-rect.height/2)/28}deg;--ry:${(e.clientX-rect.left-rect.width/2)/28}deg`;
       });
       visual.addEventListener('pointerleave', () => this.root.querySelector('.universe').removeAttribute('style'));
+      this.electrons = [...this.root.querySelectorAll('.star')];
+      this.orbitPhase = 0;
+      this.drawElectrons();
       this.select(0, false);
       this.observe();
     }
@@ -71,7 +74,49 @@
       const result = this.root.querySelector('.result');
       result.innerHTML = `<div><span class="tag">${idea.tag}</span><h3>${idea.title}</h3><p>${idea.subtitle} · ${idea.time}</p></div><ol>${idea.steps.map(step=>`<li>${step}</li>`).join('')}</ol>`;
       result.classList.remove('changed');
-      if (animate) { void result.offsetWidth; result.classList.add('changed'); }
+      if (animate) { void result.offsetWidth; result.classList.add('changed'); this.burst(); }
+    }
+    drawElectrons() {
+      // These circles use the same tilted planes and radii as the two solid halos.
+      const first = this.orbitPhase + 2.3;
+      const second = -this.orbitPhase * 0.78 + 0.7;
+      const tilt = Math.PI / 180;
+      const x = Math.cos(second) * 160;
+      const y = Math.sin(second) * 160;
+      const positions = [
+        [Math.cos(first) * 134, Math.sin(first) * 134 * Math.cos(64 * tilt), Math.sin(first) * 134 * Math.sin(64 * tilt)],
+        [x * Math.cos(58 * tilt), y * Math.cos(35 * tilt) + x * Math.sin(58 * tilt) * Math.sin(35 * tilt), y * Math.sin(35 * tilt) - x * Math.sin(58 * tilt) * Math.cos(35 * tilt)],
+      ];
+      this.electrons.forEach((dot, i) => {
+        const [px, py, pz] = positions[i];
+        dot.style.transform = `translate3d(${px}px,${py}px,${pz}px)`;
+      });
+    }
+    burst() {
+      if (this.hasAttribute('still') || this.hasAttribute('offscreen')) return;
+      this.burstStarted = performance.now();
+    }
+    syncOrbit() {
+      const stopped = !this.isConnected || this.hasAttribute('still') || this.hasAttribute('offscreen');
+      if (stopped) {
+        cancelAnimationFrame(this.orbitFrame);
+        this.orbitFrame = null;
+        this.lastOrbitTime = null;
+        this.burstStarted = null;
+        return;
+      }
+      if (this.orbitFrame != null) return;
+      const tick = now => {
+        const elapsed = this.lastOrbitTime == null ? 0 : Math.min(now - this.lastOrbitTime, 64);
+        this.lastOrbitTime = now;
+        // Integrating speed preserves position when a burst starts or ends.
+        const remaining = this.burstStarted == null ? 0 : Math.max(0, 1 - (now - this.burstStarted) / 650);
+        const speed = 1 + 7 * remaining * remaining;
+        this.orbitPhase = (this.orbitPhase + elapsed * Math.PI * 2 / 9000 * speed) % (Math.PI * 200);
+        this.drawElectrons();
+        this.orbitFrame = requestAnimationFrame(tick);
+      };
+      this.orbitFrame = requestAnimationFrame(tick);
     }
     observe() {
       this.media = matchMedia('(prefers-reduced-motion: reduce)');
@@ -79,10 +124,11 @@
       this.media.addEventListener('change', this.motionListener);
       this.bodyObserver = new MutationObserver(this.motionListener);
       this.bodyObserver.observe(document.body, {attributes:true,attributeFilter:['class']});
-      this.visibilityListener = () => this.setAttributeState('offscreen', document.hidden || !this.inView);
+      this.visibilityListener = () => { this.setAttributeState('offscreen', document.hidden || !this.inView); this.syncOrbit(); };
       document.addEventListener('visibilitychange', this.visibilityListener);
       this.intersection = new IntersectionObserver(entries => {this.inView=entries[0].isIntersecting;this.visibilityListener();});
       this.intersection.observe(this);
+      this.visibilityListener();
       this.syncMotion();
     }
     setAttributeState(name, state) { this.toggleAttribute(name, Boolean(state)); }
@@ -93,8 +139,10 @@
       button.textContent = forced ? 'Motion reduced' : this.paused ? 'Resume motion' : 'Pause motion';
       button.setAttribute('aria-pressed', String(this.paused || forced));
       button.disabled = forced;
+      this.syncOrbit();
     }
     disconnectedCallback() {
+      this.syncOrbit();
       this.media?.removeEventListener('change', this.motionListener);
       this.bodyObserver?.disconnect();
       this.intersection?.disconnect();
