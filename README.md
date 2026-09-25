@@ -53,3 +53,7 @@ Run npm install to install optional browser-test tools, start the preview server
 ## Interaction effects
 
 A compact brand intro fades out after 540 ms without delaying page rendering or intercepting input. Clickable cards, image links, navigation, buttons and section headings receive subtle hover/focus/press or entrance feedback. A thin reading-progress line follows page scroll. Effects respect reduced-motion preferences; the static sites also honor their Motion toggle. The small dependency-free implementation is in `shared/effects/`.
+
+## Visual identity
+
+Warm ivory backgrounds, burgundy navigation and buttons, and copper accents give Oakridge a welcoming editorial identity. The palette also covers the discovery experience, intro badge, favicon, forms and portal. Main colour tokens are in `shared/site.css`; the discovery component has matching tokens in `shared/discovery.js`.
