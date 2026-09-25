@@ -1,0 +1,39 @@
+/* Small, non-blocking flourishes. Content is never hidden pending JavaScript. */
+html[data-school]{--fx-accent:#a17a3c;--fx-ink:#10243a;--fx-paper:#faf8f1;--fx-shadow:#10243a19}
+html[data-school=bloomfield]{--fx-accent:#b88618;--fx-ink:#163f33;--fx-paper:#fffdf4;--fx-shadow:#163f331c}
+html[data-school=futurelab]{--fx-accent:#079aaa;--fx-ink:#0b1730;--fx-paper:#f1fcfc;--fx-shadow:#079aaa22}
+html[data-school=northford]{--fx-accent:#467c89;--fx-ink:#19343b;--fx-paper:#faf9f5;--fx-shadow:#19343b1c}
+html[data-school=oakridge]{--fx-accent:#98723d;--fx-ink:#173e33;--fx-paper:#fbfaf6;--fx-shadow:#173e331c}
+.fx-intro{position:fixed;top:18px;left:50%;z-index:10000;display:flex;align-items:center;gap:12px;max-width:calc(100vw - 32px);padding:15px 23px 18px;border:1px solid color-mix(in srgb,var(--fx-accent) 25%,transparent);border-radius:16px;background:var(--fx-paper);color:var(--fx-ink);box-shadow:0 10px 40px var(--fx-shadow);pointer-events:none;transform:translateX(-50%);overflow:hidden;animation:fx-intro-away 160ms ease 380ms forwards;font:600 12px/1.3 Arial,sans-serif;letter-spacing:.5px;white-space:nowrap}
+.fx-intro img{width:29px;height:29px;object-fit:contain;animation:fx-mark-in 320ms cubic-bezier(.2,.7,.3,1) both}
+.fx-intro::after{content:"";position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--fx-accent);transform-origin:left;animation:fx-intro-line 380ms ease-out both}
+.fx-progress{position:fixed;top:0;left:0;right:0;height:2px;background:var(--fx-accent);z-index:9999;pointer-events:none;transform:scaleX(var(--fx-progress,0));transform-origin:left;transition:transform 80ms linear;opacity:.85}
+html[data-fx-scrolled] .site-header{box-shadow:0 6px 24px var(--fx-shadow)}
+.fx-hover-card{transition:box-shadow 220ms ease,border-color 220ms ease,translate 220ms ease}
+.fx-hover-card:focus-within{box-shadow:0 12px 30px var(--fx-shadow)}
+:is(.button,.btn,.icon-button,.chip,.role-card){transition:background-color 180ms ease,color 180ms ease,border-color 180ms ease,box-shadow 180ms ease,scale 140ms ease,transform 180ms ease}
+:is(.button,.btn,.text-link) svg:is(.lucide-arrow-right,.lucide-arrow-up-right){transition:translate 180ms ease}
+:is(.button,.btn,.icon-button,.chip,.role-card):active:not(:disabled):not([aria-disabled=true]){scale:.98}
+:is(.button,.btn,.chip,.role-card):focus-visible{outline:3px solid var(--fx-accent);outline-offset:4px}
+:is(.site-header nav[aria-label="Main navigation"]>a:not(.btn),.nav-links>a:not(.btn),.nav-item>a){background-image:linear-gradient(currentColor,currentColor);background-repeat:no-repeat;background-position:0 calc(100% - 6px);background-size:0 1px;transition:background-size 200ms ease,color 180ms ease}
+:is(.site-header nav[aria-label="Main navigation"]>a:not(.btn),.nav-links>a:not(.btn),.nav-item>a):focus-visible{background-size:100% 1px}
+.fx-image-link{overflow:hidden}
+.fx-image-link img{transition:transform 380ms cubic-bezier(.2,.7,.3,1),filter 300ms ease}
+@media(hover:hover) and (pointer:fine){
+  .fx-hover-card:hover{translate:0 -3px;box-shadow:0 14px 32px var(--fx-shadow);border-color:color-mix(in srgb,var(--fx-accent) 50%,transparent)}
+  :is(.button,.btn):hover:not(:disabled):not([aria-disabled=true]){box-shadow:0 6px 18px var(--fx-shadow)}
+  :is(.button,.btn,.text-link):hover svg:is(.lucide-arrow-right,.lucide-arrow-up-right){translate:3px 0}
+  :is(.site-header nav[aria-label="Main navigation"]>a:not(.btn),.nav-links>a:not(.btn),.nav-item>a):hover{background-size:100% 1px}
+  .fx-image-link:hover img{transform:scale(1.035);filter:saturate(1.04)}
+}
+@keyframes fx-intro-away{to{opacity:0;visibility:hidden;transform:translate(-50%,-5px)}}
+@keyframes fx-mark-in{from{opacity:.3;transform:scale(.88) rotate(-8deg)}to{opacity:1;transform:scale(1) rotate(0)}}
+@keyframes fx-intro-line{from{transform:scaleX(.06)}to{transform:scaleX(1)}}
+body.motion-off .fx-intro{display:none}
+body.motion-off :is(.fx-hover-card,.fx-image-link img,.fx-progress,.button,.btn,.icon-button,.chip,.role-card,.text-link svg){animation:none!important;transition:none!important;translate:none!important;scale:none!important}
+body.motion-off .fx-image-link:hover img{transform:none}
+@media(prefers-reduced-motion:reduce){
+  .fx-intro{display:none}
+  :is(.fx-hover-card,.fx-image-link img,.fx-progress,.button,.btn,.icon-button,.chip,.role-card,.text-link svg){animation:none!important;transition:none!important;translate:none!important;scale:none!important}
+  .fx-image-link:hover img{transform:none}
+}
