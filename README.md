@@ -56,4 +56,4 @@ A compact brand intro fades out after 540 ms without delaying page rendering or 
 
 ## Visual identity
 
-Warm ivory backgrounds, burgundy navigation and buttons, and copper accents give Oakridge a welcoming editorial identity. The palette also covers the discovery experience, intro badge, favicon, forms and portal. Main colour tokens are in `shared/site.css`; the discovery component has matching tokens in `shared/discovery.js`.
+Warm ivory backgrounds, burgundy navigation and buttons, and copper accents give Oakridge a welcoming editorial identity. The palette also covers the intro badge, favicon, forms and portal. Main colour tokens are in `shared/site.css`.

@@ -20,3 +20,11 @@
 .footer .brand-mark{color:var(--gold);border-color:var(--gold)}
 @media(max-width:620px){.oak-home .stats{grid-template-columns:repeat(2,1fr)}.oak-home .stat{padding:18px 12px}.oak-home .stat span{font-size:10px}.oak-home .stat:nth-child(-n+2){border-bottom:1px solid var(--line)}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.tilt{transform:none!important}}
+
+.oak-returned-links{display:grid;grid-template-columns:1fr 1fr;gap:24px;padding-block:30px}.oak-returned-links .aside-block{min-width:0}.oak-returned-links .aside-body{padding:20px 24px}.oak-returned-links .mini-notice{font-size:13px}.oak-returned-links .corner-link{font-size:14px}.principal-note .quote-mark{font:56px/1 Georgia,serif;color:var(--accent);height:62px}.principal-note blockquote{font:clamp(24px,2.3vw,31px)/1.35 Georgia,serif;margin:8px 0 18px}.principal-note strong,.principal-note .muted{display:block}.principal-note .text-link,.next-event .text-link{margin-top:16px}.next-event h3{font-size:29px;margin:12px 0}.next-event p{line-height:1.8}@media(max-width:620px){.oak-returned-links{grid-template-columns:1fr;gap:16px;padding-block:20px}.oak-returned-links .aside-body{padding:20px}.principal-note blockquote{font-size:25px}}
+
+.oak-home-below{grid-column:2;min-width:0}.oak-main>.oak-hero{width:100%}.oak-aside .aside-block{min-width:0}.oak-aside .aside-body{padding:20px 24px}.oak-aside .mini-notice{font-size:13px}.oak-aside .corner-link{font-size:14px}.principal-note .quote-mark{font:56px/1 Georgia,serif;color:var(--accent);height:62px}.principal-note blockquote{font:clamp(24px,2.3vw,31px)/1.35 Georgia,serif;margin:8px 0 18px}.principal-note strong,.principal-note .muted{display:block}.principal-note .text-link,.next-event .text-link{margin-top:16px}.next-event h3{font-size:29px;margin:12px 0}.next-event p{line-height:1.8}@media(max-width:620px){.oak-home-below{grid-column:auto}.oak-aside .aside-body{padding:20px}.principal-note blockquote{font-size:25px}}
+
+.oak-main{min-width:0}.oak-main>.section>.wrap{width:100%}@media(max-width:620px){.oak-main>.section>.wrap{width:90%}}
+
+@media(max-width:620px){.oak-aside{order:-1}.oak-main{order:0}}
